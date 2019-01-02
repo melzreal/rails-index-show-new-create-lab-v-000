@@ -1,8 +1,8 @@
 class CreateCoupons < ActiveRecord::Migration
   def change
-    create_table :posts do |t|
-      t.string :title
-      t.text :description
+    create_table :coupons do |t|
+      t.string :coupon_code
+      t.string :store
 
       t.timestamps null: false
     end
